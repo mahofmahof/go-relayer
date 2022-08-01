@@ -46,3 +46,14 @@ paths:
         src-channel-filter:
             rule: ""
             channel-list: []
+            
+            rly transact link stridegaia
+
+2022-08-01T13:00:53.851546Z     info    Starting event processor for channel handshake  {"src_chain_id": "STRIDE-TESTNET-2", "src_port_id": "transfer", "dst_chain_id": "GAIA", "dst_port_id": "transfer"}
+2022-08-01T13:00:53.868976Z     info    Chain is in sync        {"chain_name": "stride", "chain_id": "STRIDE-TESTNET-2"}
+2022-08-01T13:00:54.162284Z     info    Chain is in sync        {"chain_name": "GAIA", "chain_id": "GAIA"}
+2022-08-01T13:00:56.922407Z     warn    Error querying block data       {"chain_name": "stride", "chain_id": "STRIDE-TESTNET-2", "error": "RPC error -32603 - Internal error: could not find results for height #42425"}
+2022-08-01T13:01:08.239603Z     info    Successful transaction  {"provider_type": "cosmos", "chain_id": "STRIDE-TESTNET-2", "gas_used": 319600, "fees": "371ustrd", "fee_payer": "stride127n3w20smvkxlrze2q9u5vj0utg5tx648azgd7", "height": 42426, "msg_types": ["/ibc.core.client.v1.MsgUpdateClient", "/ibc.core.channel.v1.MsgChannelOpenInit"], "tx_hash": "896C8A7123F94EC0D229636FC25A842204A340ED7055FAE44496B50695976168"}
+2022-08-01T13:01:18.836377Z     info    Successful transaction  {"provider_type": "cosmos", "chain_id": "GAIA", "gas_used": 577998, "fees": "6806uatom", "fee_payer": "cosmos127n3w20smvkxlrze2q9u5vj0utg5tx64ykz5ej", "height": 94810, "msg_types": ["/ibc.core.client.v1.MsgUpdateClient", "/ibc.core.channel.v1.MsgChannelOpenTry"], "tx_hash": "F7D3EE4D28608AF29126C51682D358137D897C5A4130B704868416DFA7F881C4"}
+2022-08-01T13:01:32.248226Z     info    Successful transaction  {"provider_type": "cosmos", "chain_id": "STRIDE-TESTNET-2", "gas_used": 288973, "fees": "335ustrd", "fee_payer": "stride127n3w20smvkxlrze2q9u5vj0utg5tx648azgd7", "height": 42430, "msg_types": ["/ibc.core.client.v1.MsgUpdateClient", "/ibc.core.channel.v1.MsgChannelOpenAck"], "tx_hash": "96459E562C9C74E62DD2B39D405D74CCFD2A3BBC62F96EC5F82B46BA046003A2"}
+2022-08-01T13:01:43.935575Z     info    Successful transaction  {"provider_type": "cosmos", "chain_id": "GAIA", "gas_used": 512333, "fees": "6018uatom", "fee_payer": "cosmos127n3w20smvkxlrze2q9u5vj0utg5tx64ykz5ej", "height": 94815, "msg_types": ["/ibc.core.client.v1.MsgUpdateClient", "/ibc.core.channel.v1.MsgChannelOpenConfirm"], "tx_hash": "E37B2FAD02A6DE8A74ABA6D1B43C4C5C51C4D050F94D63756EEF1F5C3BE41B50"}
