@@ -1,0 +1,48 @@
+root@vmi778369:~# cat .relayer/config/config.yaml
+global:
+    api-listen-addr: :5183
+    timeout: 10s
+    memo: MAHOF IBC Service
+    light-cache-size: 20
+chains:
+    GAIA:
+        type: cosmos
+        value:
+            key: key
+            chain-id: GAIA
+            rpc-addr: http://stride.stake-take.com:46657
+            account-prefix: cosmos
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.01uatom
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+    stride:
+        type: cosmos
+        value:
+            key: key
+            chain-id: STRIDE-TESTNET-2
+            rpc-addr: http://127.0.0.1:26657
+            account-prefix: stride
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.001ustrd
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+paths:
+    stride-gaia:
+        src:
+            chain-id: STRIDE-TESTNET-2
+            client-id: 07-tendermint-103
+            connection-id: connection-105
+        dst:
+            chain-id: GAIA
+            client-id: 07-tendermint-21
+            connection-id: connection-37
+        src-channel-filter:
+            rule: ""
+            channel-list: []
