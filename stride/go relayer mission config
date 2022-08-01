@@ -47,6 +47,7 @@ paths:
             rule: ""
             channel-list: []
             
+            rly paths new STRIDE-TESTNET-2 GAIA stride-gaia
             rly transact link stridegaia
 
 2022-08-01T13:00:53.851546Z     info    Starting event processor for channel handshake  {"src_chain_id": "STRIDE-TESTNET-2", "src_port_id": "transfer", "dst_chain_id": "GAIA", "dst_port_id": "transfer"}
