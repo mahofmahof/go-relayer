@@ -46,7 +46,11 @@ paths:
         src-channel-filter:
             rule: ""
             channel-list: []
-            
+            rly k l GAIA
+key(key) -> cosmos127n3w20smvkxlrze2q9u5vj0utg5tx64ykz5ej
+            rly k l stride
+key(key) -> stride127n3w20smvkxlrze2q9u5vj0utg5tx648azgd7
+
             rly paths new STRIDE-TESTNET-2 GAIA stride-gaia
             rly transact link stridegaia
 
@@ -58,3 +62,17 @@ paths:
 2022-08-01T13:01:18.836377Z     info    Successful transaction  {"provider_type": "cosmos", "chain_id": "GAIA", "gas_used": 577998, "fees": "6806uatom", "fee_payer": "cosmos127n3w20smvkxlrze2q9u5vj0utg5tx64ykz5ej", "height": 94810, "msg_types": ["/ibc.core.client.v1.MsgUpdateClient", "/ibc.core.channel.v1.MsgChannelOpenTry"], "tx_hash": "F7D3EE4D28608AF29126C51682D358137D897C5A4130B704868416DFA7F881C4"}
 2022-08-01T13:01:32.248226Z     info    Successful transaction  {"provider_type": "cosmos", "chain_id": "STRIDE-TESTNET-2", "gas_used": 288973, "fees": "335ustrd", "fee_payer": "stride127n3w20smvkxlrze2q9u5vj0utg5tx648azgd7", "height": 42430, "msg_types": ["/ibc.core.client.v1.MsgUpdateClient", "/ibc.core.channel.v1.MsgChannelOpenAck"], "tx_hash": "96459E562C9C74E62DD2B39D405D74CCFD2A3BBC62F96EC5F82B46BA046003A2"}
 2022-08-01T13:01:43.935575Z     info    Successful transaction  {"provider_type": "cosmos", "chain_id": "GAIA", "gas_used": 512333, "fees": "6018uatom", "fee_payer": "cosmos127n3w20smvkxlrze2q9u5vj0utg5tx64ykz5ej", "height": 94815, "msg_types": ["/ibc.core.client.v1.MsgUpdateClient", "/ibc.core.channel.v1.MsgChannelOpenConfirm"], "tx_hash": "E37B2FAD02A6DE8A74ABA6D1B43C4C5C51C4D050F94D63756EEF1F5C3BE41B50"}
+
+
+rly paths show stride-gaia
+Path "stride-gaia":
+  SRC(STRIDE-TESTNET-2)
+    ClientID:     07-tendermint-103
+    ConnectionID: connection-105
+  DST(GAIA)
+    ClientID:     07-tendermint-21
+    ConnectionID: connection-37
+  STATUS:
+    Chains:       ✔
+    Clients:      ✔
+    Connection:   ✔
